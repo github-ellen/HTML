@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서</title>
+</head>
+<body>
+    <h2>이력서 폼 만들기</h2>
+    <!-- 3행 5열 준비 -->
+    <table border="1">
+        <tr>
+            <td rowspan="3">
+                <img src="./images/panda.png" alt="판다" width="100">
+            </td>
+            <td>이름</td>
+            <td>판다</td>
+            <td>전화번호</td>
+            <td>010-9999-9999</td>
+        </tr>
+        <tr>
+            <td>주소</td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td>생년월일</td>
+            <td></td>
+            <td>병역사항</td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <h2>시간표 만들기</h2>
+    <table border="1">
+        <tr>
+            <!-- 자동 중간 정렬 기능 -->
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+        </tr>
+        <tr>
+            <td rowspan="2">MYSQL</td>
+            <td rowspan="3">자바</td>
+            <td><mark>HTML5</mark></td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>JavaScript</td>
+        </tr>
+        <tr>
+            <td>파이썬</td>
+            <td colspan="2">오라클</td>
+        </tr>
+    </table>
+    <br>
+    <h2>하이퍼링크</h2>
+    <table border="1">
+        <tr>
+            <td>
+                <a href="https://www.google.co.kr/">구글 홈페이지</a>
+            </td>
+            <td>
+                <a href="https://www.google.co.kr/"><img src="/images/google.png" width="100"></a>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h2>로그인 창</h2>
+    <form>
+    <table border="1">
+        <tr>
+            <td>아이디</td>
+            <td><input type="text" name="id"></td>
+        </tr>
+        <tr>
+            <td>비밀번호</td>
+            <td><input type="password" name="pw"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button>로그인</button>
+                <input type="submit" value="취소">
+            </td>
+        </tr>
+    </table>
+    </form>
+    <hr>
+    <form>
+        <h2>회원가입 폼</h2>
+        <fieldset>
+            <legend>필수정보</legend>
+            아이디<input type="text" name="id" placeholder="아이디를 입력하세요"><br>
+            비밀번호<input type="password" name="pw" placeholder="4글자 이상"><br>
+            이메일<input type="email" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>선택정보</legend>
+            <label>생년월일</label>
+                <input type="date" name="date"><br>
+            <label>좋아하는 색</label>
+                <input type="color"><br>
+            <label>프로필 사진</label>
+                <input type="file"><br>
+            <label>선호도</label>
+                <input type="range">
+        </fieldset>
+        <button>등록</button>
+        <button>취소</button>
+    </form>
+    <br>
+    <hr>
+    <form>
+        <h2>상품 주문서</h2>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li> 이름 <input type="text" name="name" placeholder="여백없이 입력">
+                <li> 연락처 <input type="tel" name="tel" placeholder="연락 가능한 번호"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>주소 <input type="text" name="address" size="40"></li>
+                <li>전화번호 <input type="tel" name="tel"></li>
+                <li>메모 <textarea rows="8" cols="40"></textarea></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문 정보</legend>
+            <ul>
+                <li><input type="checkbox">과테말라 안티구아(100g) <input type="number" min="0">개</li>
+                <li><input type="checkbox">인토네시아 만델링(100g) <input type="number" min="0">개</li>
+                <li><input type="checkbox">탐라는도다(블렌딩)(100g) <input type="number" min="0">개</li>
+            </ul>
+        </fieldset>
+        <button>주문하기</button>
+        <button>다시 작성</button>
+    </form> 
+    <br>
+</body>
+</html>

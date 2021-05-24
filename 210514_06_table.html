@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블</title>
+</head>
+<body>
+    <h2>엑셀 같은 테이블 만들기</h2>
+    <table border="1">
+        <!-- tr : 행, td : 열 -->
+        <tr>
+            <th>열1</th>
+            <th>열2</th>
+            <th>열3</th>
+        </tr>
+        <tr>
+            <!-- 셀병합 -->
+            <td rowspan="2">1행 1열</td>
+            <td colspan="2">1행 2열</td>
+            <!--1행 2열과 합쳤으니까 <td>1행 3열</td> 삭제-->
+        </tr>
+        <tr>
+            <!-- 1행 1열과 합쳤으니까 <td>2행 1열</td> 삭제 -->
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+    </table>
+</body>
+</html>
